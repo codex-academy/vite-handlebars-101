@@ -74,7 +74,7 @@ This will go with a JavaScript object literal called:
 
 ```json
 {
-    key_name : 'this value will go in the template'
+    "key_name" : 'this value will go in the template'
 }
 ```
 
@@ -88,8 +88,8 @@ Will use a data Object like this:
 
 ```json
 {
-    name : "Joe",
-    week_day : "Wednesday"
+    "name" : "Joe",
+    "week_day" : "Wednesday"
 }
 ```
 
@@ -112,8 +112,8 @@ The data for this template looks like this:
 
 ```json
 {
-    name : "Joe Bloggs",
-    isClient : false
+    "name" : "Joe Bloggs",
+    "isClient" : false
 }
 ```
 
@@ -128,7 +128,7 @@ Given a list of `days`
 
 ```json
 {
-    days : ["Monday", "Wednesday", "Friday"]
+    "days" : ["Monday", "Wednesday", "Friday"]
 }
 ```
 
