@@ -103,7 +103,7 @@ Hi there {{name}},
 {{#if isClient}}
 Welcome back to our website.
 {{else}}
-Welcome back to website.
+Welcome to our website.
 {{/if}}
 ```
 
@@ -117,5 +117,28 @@ The data for this template looks like this:
 }
 ```
 
+Based on the data above Handlebars will return `Welcome to our website.`.
+
+
 ### Loops
 
+Handlebars can loop over a list in a Object.
+
+Given a list of `days`
+
+```json
+{
+    days : ["Monday", "Wednesday", "Friday"]
+}
+```
+
+you can loop over them using the `#each` tag
+
+```
+The days you attended are:
+{{#each days}}
+* {{this}}
+{{/each}}
+```
+
+In the template above `this` refers to the current item the template is looping over.
